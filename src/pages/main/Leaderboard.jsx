@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import ParticlesComponent from '../../components/main/particle';
 
 const leaderboardData = [
-  { position: 1, teamName: "Alpha Hackers", score: 350 },
-  { position: 2, teamName: "Beta Warriors", score: 300 },
+  { position: 1, teamName: "Alpha", score: 350 },
+  { position: 2, teamName: "Beta ", score: 300 },
   { position: 3, teamName: "Cyber Legends", score: 280 },
-  { position: 4, teamName: "Dark Force", score: 260 },
+  { position: 4, teamName: "Dark Forces", score: 260 },
   { position: 5, teamName: "Shadow Stars", score: 240 },
 ];
 
