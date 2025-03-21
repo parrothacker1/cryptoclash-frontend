@@ -7,10 +7,15 @@ import MainDashboard from './pages/main/Dashboard';
 import MainRules from './pages/main/rules';
 import MainTeam from './pages/main/addTeams'
 import MainLeaderboard from './pages/main/Leaderboard';
+import './App.css';
+import ParticlesComponent from './components/main/particle';
 
 function App() {
   return (
+    
     <Router> {/* Wrap everything inside Router */}
+      <ParticlesComponent id="particles" className="absolute inset-0 -z-10" />
+
       <Routes>
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<Authlogin />} />

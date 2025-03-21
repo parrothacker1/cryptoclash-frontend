@@ -2,6 +2,7 @@ import { Button } from "../ui/button";
 import { AlignJustify, LogOut } from "lucide-react";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "../ui/dropdown-menu"; 
 import { useNavigate } from "react-router-dom";
+import ParticlesComponent from "./particle";
 
 function MainHeader({ setOpen }) {
   const navigate = useNavigate();
@@ -13,6 +14,8 @@ function MainHeader({ setOpen }) {
 
   return (
     <header className="flex items-center px-4 py-3 bg-black text-[#00FF41] justify-between font-['Playfair_Display']">
+            <ParticlesComponent id="particles" className="absolute inset-0 -z-10" />
+
       <Button
         onClick={() => setOpen(true)}
         className="lg:hidden sm:block bg-[#00FF41] text-black font-bold hover:bg-[#00CC33] focus:outline-none"
