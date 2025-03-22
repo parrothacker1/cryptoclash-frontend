@@ -5,22 +5,21 @@ import AuthRegister from './pages/auth/register';
 import MainLayout from './components/main/layout';
 import MainDashboard from './pages/main/Dashboard';
 import MainRules from './pages/main/rules';
-import MainTeam from './pages/main/addTeams'
+import MainTeam from './pages/main/addTeams';
 import MainLeaderboard from './pages/main/Leaderboard';
-import './App.css';
-import ParticlesComponent from './components/main/particle';
+
 
 function App() {
   return (
-    
-    <Router> {/* Wrap everything inside Router */}
-      <ParticlesComponent id="particles" className="absolute inset-0 -z-10" />
-
+    <Router>
       <Routes>
+        {/* Auth Pages - No Sidebar */}
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<Authlogin />} />
           <Route path="register" element={<AuthRegister />} />
         </Route>
+
+        {/* Main Pages - Sidebar included inside MainLayout */}
         <Route path="/main" element={<MainLayout />}>
           <Route path="dashboard" element={<MainDashboard />} />
           <Route path="leaderboard" element={<MainLeaderboard />} />
@@ -29,7 +28,6 @@ function App() {
         </Route>
       </Routes>
     </Router>
-    
   );
 }
 
