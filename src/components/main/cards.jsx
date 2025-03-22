@@ -6,7 +6,6 @@ import { Separator } from "../ui/separator";
 import { Lock, Unlock } from "lucide-react";
 import { HyperText } from "../magicui/hyper-text";
 
-
 const LockedCardDialog = ({ problem }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
@@ -22,8 +21,8 @@ const LockedCardDialog = ({ problem }) => {
     <div className="p-5 font-['Playfair_Display'] cursor-pointer">
       {/* Locked Card UI */}
       <motion.div
-        className="relative w-[420px] h-[180px] bg-[#121212] rounded-2xl shadow-[0_0_25px_#00FF00] border-4 border-[#ADFF2F] 
-        transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_#00FF00] hover:-translate-y-1"
+        className="relative w-[300px] h-[250px] sm:w-[400px] sm:h-[300px] bg-[#121212] rounded-2xl shadow-[0_0_25px_#00FF00] 
+        border-4 border-[#ADFF2F] transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_#00FF00] hover:-translate-y-1"
         whileHover={{ rotate: 1 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setShowDialog(true)}
