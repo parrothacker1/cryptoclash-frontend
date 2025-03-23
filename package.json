@@ -24,6 +24,7 @@
     "@tailwindcss/vite": "^4.0.12",
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "@zxing/browser": "^0.1.5",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
